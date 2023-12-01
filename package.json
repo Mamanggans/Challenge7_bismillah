@@ -1,0 +1,19 @@
+{
+  "name": "bismillah-chptr-7",
+  "version": "1.0.0",
+  "description": "challenge 7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mamanggans/Challenge7_bismillah.git"
+  },
+  "author": "ferdiansyah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mamanggans/Challenge7_bismillah/issues"
+  },
+  "homepage": "https://github.com/Mamanggans/Challenge7_bismillah#readme"
+}
