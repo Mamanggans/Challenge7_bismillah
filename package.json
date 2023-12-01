@@ -4,7 +4,7 @@
   "description": "challenge 7",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/Mamanggans/Challenge7_bismillah/issues"
   },
-  "homepage": "https://github.com/Mamanggans/Challenge7_bismillah#readme"
+  "homepage": "https://github.com/Mamanggans/Challenge7_bismillah#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "prisma": "^5.6.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.6.0",
+    "@sentry/node": "^7.84.0",
+    "chalk": "^5.3.0",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "socket.io": "^4.7.2",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "keywords": []
 }
