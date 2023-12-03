@@ -1,0 +1,37 @@
+<!-- Menyertakan file header.ejs dengan variabel lokal -->
+<%- include('header.ejs', { pageTitle: 'Image Gallery' }) %>
+
+<!-- Isi utama untuk halaman gallery -->
+<main class="container mt-4">
+  <div class="row">
+
+    <!-- Konten utama -->
+    <div class="col-md-9">
+      <h1>Image Gallery</h1>
+
+      <% if (images && images.length > 0) { %>
+        <div class="row">
+          <% images.forEach(renderImage) %>
+        </div>
+      <% } else { %>
+        <p>No images available.</p>
+      <% } %>
+    </div>
+  </div>
+</main>
+
+<!-- Menyertakan file footer.ejs -->
+<%- include('footer.ejs') %>
+
+<%
+// Fungsi bantuan untuk merender setiap gambar
+function renderImage(image) { %>
+  <div class="col-md-4 mb-4">
+    <div class="card">
+      <img src="<%= image.url %>" class="card-img-top" alt="<%= image.description %>">
+      <div class="card-body">
+        <p class="card-text"><%= image.description %></p>
+      </div>
+    </div>
+  </div>
+<% } %>
